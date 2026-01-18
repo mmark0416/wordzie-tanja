@@ -72,7 +72,7 @@ function EditWord() {
           id="hun"
           value={formData.hun}
           className="bg-black smallShadow"
-          placeholder="ukr"
+          placeholder="hun"
           onChange={e => handleChange(e)}
         />
         <input

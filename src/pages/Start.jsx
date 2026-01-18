@@ -105,21 +105,21 @@ function Start() {
 
       const firstMix = wordMix && (wordMix === "eng" ? hun : eng)
       const firstRandomWord =
-        (first === "ukr" && hun) ||
+        (first === "hun" && hun) ||
         (first === "eng" && eng) ||
         (first === "mix" && firstMix || (randomL === 1 ? hun : eng));
 
       const secondMix = wordMix && (wordMix === "eng" ? eng : hun)
       const secondRandomWord =
-        (first === "ukr" && eng) ||
+        (first === "hun" && eng) ||
         (first === "eng" && hun) ||
         (first === "mix" && secondMix || (randomL === 1 ? eng : hun));
 
       if (!wordMix) {
-        words[randomNum].mix = randomL === 1 ? "ukr" : "eng"
+        words[randomNum].mix = randomL === 1 ? "hun" : "eng"
       } else {
 
-        words[randomNum].mix = wordMix === "eng" ? "ukr" : "eng"
+        words[randomNum].mix = wordMix === "eng" ? "hun" : "eng"
       }
 
       setRandomWord([
@@ -196,7 +196,7 @@ function Start() {
             defaultValue={first}
             className="border rounded-lg bg-black text-white p-1 w-16"
           >
-            <option value="ukr">ukr</option>
+            <option value="hun">hun</option>
             <option value="eng">eng</option>
             <option value="mix">mix</option>
           </select>
