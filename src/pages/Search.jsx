@@ -29,7 +29,7 @@ export default function Search() {
               className="flex mt-10 justify-center mx-auto w-10/12 rounded-md border-solid border-2 border-cyan-900 p-2 text-left"
             >
               <div className="pr-5 w-44">
-                <p>hun:</p>
+                <p>ukr:</p>
                 <p>eng:</p>
                 <p>pronounce:</p>
                 <p>Sentence:</p>

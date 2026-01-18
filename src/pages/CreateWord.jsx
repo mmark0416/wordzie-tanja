@@ -56,7 +56,7 @@ function NewWord() {
           className="bg-black smallShadow"
           id="hun"
           type="text"
-          placeholder="hun"
+          placeholder="ukr"
           onChange={handleChange}
         />
         <input
